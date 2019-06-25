@@ -1,11 +1,15 @@
 {
   "name": "vue-financial-input",
   "version": "0.1.0",
-  "private": true,
+  "description": "基于 Vue 的财务友好输入框",
+  "main": "lib/vue-financial-input.umd.min.js",
+  "keyword": "financial-input financial vue-financial-input",
+  "private": false,
   "scripts": {
     "serve": "vue-cli-service serve",
     "build": "vue-cli-service build",
-    "lint": "vue-cli-service lint"
+    "lint": "vue-cli-service lint",
+    "lib": "vue-cli-service build --target lib --name vue-financial-input --dest lib packages/index.ts"
   },
   "dependencies": {
     "@types/lodash": "^4.14.134",
