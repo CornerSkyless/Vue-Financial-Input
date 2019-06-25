@@ -53,6 +53,7 @@ export default class VueFinancialInput extends Vue {
       right:this.inputStyle ? this.inputStyle.paddingRight : '0px',
       width:(this.value.toFixed(2).length*fontSize*scale)-1 + 'px',
       fontSize:this.inputStyle  ? (0.8*fontSize-3+'px') : '0px',
+      lineHeight:this.inputStyle ? this.inputStyle.paddingTop : '0px',
     }
   }
 

@@ -1,6 +1,6 @@
 {
   "name": "vue-financial-input",
-  "version": "0.1.1",
+  "version": "0.1.2",
   "description": "基于 Vue 的财务友好输入框",
   "main": "lib/vue-financial-input.umd.min.js",
   "keyword": "financial-input financial vue-financial-input",
