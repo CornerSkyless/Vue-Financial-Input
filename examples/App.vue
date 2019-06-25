@@ -2,8 +2,12 @@
   <div id="app">
     <img alt="Vue logo" src="./assets/logo.png">
     <h1>Vue-Financial-Input</h1>
-    <VueFinancialInput v-model="value"/>
-    {{value}}
+    <VueFinancialInput v-model="value1" currency="¥" :height="32" style="width: 260px;margin: 12px auto"/>
+    <VueFinancialInput v-model="value2" currency="¥" style="width: 260px;margin: 10px auto"/>
+    <VueFinancialInput v-model="value3" currency="¥" :height="44" style="width: 260px;margin: 10px auto"/>
+    <div style="margin-top: 20px">value1: {{value1}}</div>
+    <div style="margin-top: 20px">value2: {{value2}}</div>
+    <div style="margin-top: 20px">value3: {{value3}}</div>
   </div>
 </template>
 
@@ -12,7 +16,9 @@ import { Component, Vue } from 'vue-property-decorator';
 
 @Component
 export default class App extends Vue {
-  value = '3345';
+  value1 = 567.89;
+  value2 = 123456;
+  value3 = 31415926;
 }
 </script>
 
